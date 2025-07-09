@@ -12,11 +12,38 @@
     <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png" />
     <link rel="shortcut icon" href="favicon.ico" />
-
-    <!-- Web App Manifest -->
     <link rel="manifest" href="manifest.json" />
 
+    <!-- Foglio di stile -->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      form.contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+      form.contact-form input,
+      form.contact-form textarea {
+        width: 100%;
+        padding: 0.75em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        color: #000;
+      }
+      form.contact-form button {
+        padding: 0.75em;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      form.contact-form button:hover {
+        background-color: #222;
+      }
+    </style>
+
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
   <body class="is-preload">
@@ -103,6 +130,12 @@
         <!-- Contatti -->
         <article id="contatti">
           <h2 class="major">Contatti</h2>
+          <form class="contact-form" action="https://formspree.io/f/mldnyypg" method="POST">
+            <input type="text" name="name" placeholder="Il tuo nome" required />
+            <input type="email" name="email" placeholder="La tua email" required />
+            <textarea name="message" rows="6" placeholder="Il tuo messaggio" required></textarea>
+            <button type="submit">Invia Messaggio</button>
+          </form>
           <ul>
             <li><strong>Email:</strong> <a href="mailto:marcogiulio.scagno@outlook.com">marcogiulio.scagno@outlook.com</a></li>
             <li><strong>PEC:</strong> <a href="mailto:marcogiulio.scagno@pec.it">marcogiulio.scagno@pec.it</a></li>
@@ -117,7 +150,6 @@
           &copy; Marco Giulio Scagno. Template: <a href="https://html5up.net/dimension">Dimension</a> by HTML5 UP.
         </p>
       </footer>
-
     </div>
 
     <!-- Scripts -->
