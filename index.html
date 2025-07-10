@@ -4,7 +4,6 @@
     <title>Marco Giulio Scagno - Project Manager / Team Leader</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -13,33 +12,23 @@
     <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png" />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.json" />
-
-    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-      /* Fix per layout del menu */
-      #header nav ul {
-        display: flex;
-        flex-wrap: wrap;
+      header#header {
+        min-height: 100vh; /* Spazio verticale completo */
+        padding-top: 2em;
+      }
+      nav ul li a {
+        min-height: 3em;
+        display: inline-flex;
+        align-items: center;
         justify-content: center;
-        gap: 0.5em;
-        padding: 0;
-        margin: 0 auto;
-        max-width: 100%;
       }
-
-      #header nav ul li {
-        flex: 1 1 auto;
-        text-align: center;
-        min-width: 110px;
-      }
-
       form.contact-form {
         display: flex;
         flex-direction: column;
         gap: 1em;
       }
-
       form.contact-form input,
       form.contact-form textarea {
         width: 100%;
@@ -49,7 +38,6 @@
         background-color: #fff;
         color: #000;
       }
-
       form.contact-form button {
         padding: 0.75em;
         background-color: #000;
@@ -58,24 +46,20 @@
         border-radius: 4px;
         cursor: pointer;
       }
-
       form.contact-form button:hover {
         background-color: #222;
       }
-
       .message-success {
         color: #00cc66;
         font-weight: bold;
         margin-top: 10px;
       }
-
       .message-error {
         color: #ff4444;
         font-weight: bold;
         margin-top: 10px;
       }
     </style>
-
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
   <body class="is-preload">
@@ -86,8 +70,7 @@
         <div class="content">
           <div class="inner">
             <h1>Marco Giulio Scagno</h1>
-            <p>Team Leader / Project Manager<br />
-            ICT & Healthcare Software Solutions</p>
+            <p>Team Leader / Project Manager<br /> ICT & Healthcare Software Solutions</p>
           </div>
         </div>
         <nav>
@@ -109,35 +92,35 @@
         <article id="presentazione">
           <h2 class="major">Presentazione</h2>
           <p>Dopo la Laurea Magistrale in Ingegneria Elettronica, ho iniziato il mio percorso in DS Group, azienda specializzata in soluzioni Mobile per il mondo enterprise.
-          In seguito ho maturato una solida esperienza nel settore Healthcare collaborando con Noemalife e Dedalus, dove ho ricoperto il ruolo di Application Specialist per diversi anni.</p>
-          <p>Dal 2018 lavoro in <strong>GPI Spa</strong>, prima come Project Manager e, dal 2023, come Team Leader di un’unità operativa composta da oltre 80 Specialist,
+          In seguito ho maturato una solida esperienza nel settore Healthcare collaborando con Noemalife e Dedalus.</p>
+          <p>Dal 2018 lavoro in <strong>GPI Spa</strong>, prima come Project Manager e, dal 2023, come Team Leader di un’unità operativa con oltre 80 Specialist,
           con responsabilità diretta su progetti, risorse e clienti in ambito sanitario.</p>
         </article>
 
         <!-- Esperienza -->
         <article id="esperienza">
           <h2 class="major">Esperienza</h2>
-          <p><strong>GPI Spa</strong> – <em>Project Manager / Team Leader</em> (2018 – oggi)<br />
-          Responsabile della gestione operativa di una Business Unit con oltre 80 Application Specialist nel Nord-Ovest. Coordinamento di progetti in ambito sanitario, gestione diretta di clienti pubblici e privati, pianificazione attività, interfaccia con stakeholder interni ed esterni, controllo tempi e costi, supervisione della fase di avviamento e formazione.</p>
+          <p><strong>GPI Spa</strong> – <em>Project Manager / Team Leader</em> (2018 – oggi)</p>
+          <p>Gestione operativa di una Business Unit con oltre 80 Application Specialist nel Nord-Ovest. Coordinamento progetti, gestione clienti, stakeholder, budget, tempi e formazione.</p>
 
-          <p><strong>Dedalus / NoemaLife</strong> – <em>Application Specialist</em> (2014 – 2018)<br />
-          Presidio tecnico-applicativo presso l’Ospedale Pediatrico Gaslini. Gestione operativa di sistemi sanitari, monitoraggio log HL7, utilizzo di SQL e PL/SQL per interrogazioni, estrazioni dati e creazione viste su database Oracle. Configurazione software, redazione manuali, supporto e formazione utenti.</p>
+          <p><strong>Dedalus / NoemaLife</strong> – <em>Application Specialist</em> (2014 – 2018)</p>
+          <p>Presidio tecnico-applicativo presso l’Ospedale Gaslini. Gestione sistemi sanitari, HL7, SQL/PLSQL, configurazione software, formazione utenti.</p>
 
-          <p><strong>DS Group</strong> – <em>Customer Support Specialist</em> (2011 – 2013)<br />
-          Supporto a soluzioni Mobile Enterprise in ambito retail. Formazione on-site presso clienti come Thun e Costa Crociere, gestione utenze e dispositivi mobili, attività di helpdesk e training.</p>
+          <p><strong>DS Group</strong> – <em>Customer Support Specialist</em> (2011 – 2013)</p>
+          <p>Supporto soluzioni mobile in ambito retail, formazione clienti, helpdesk, gestione dispositivi mobili.</p>
         </article>
 
         <!-- Formazione -->
         <article id="formazione">
           <h2 class="major">Formazione</h2>
           <ul>
-            <li>Prince 2 Foundation - Certificazione Project Manager (2024)</li>
-            <li>ISIPM Base – Certificazione Project Management (2023)</li>
+            <li>Prince2 Foundation – Certificazione (2024)</li>
+            <li>ISIPM Base – Certificazione PM (2023)</li>
             <li>Formazione Preposti Sicurezza – Randstad HR (2023)</li>
-            <li>Corsi di Inglese – InLingua Genova (2013–2014)</li>
-            <li>AutoCAD 2D Base e Avanzato – FIRE (2013)</li>
-            <li>Web Editing (HTML/CSS) – Isform Hi Tech (2013)</li>
-            <li>Laurea in Ingegneria Elettronica – Università di Genova (2005–2010)</li>
+            <li>Inglese – InLingua Genova (2013–2014)</li>
+            <li>AutoCAD 2D – FIRE (2013)</li>
+            <li>HTML/CSS – Isform Hi Tech (2013)</li>
+            <li>Laurea Magistrale Ingegneria Elettronica – UNIGE (2005–2010)</li>
           </ul>
         </article>
 
@@ -145,24 +128,24 @@
         <article id="competenze">
           <h2 class="major">Competenze</h2>
           <ul>
-            <li>Coordinamento operativo e strategico di una Business Unit con oltre 80 Application Specialist</li>
-            <li>Gestione progetti ICT in ambito sanitario, con responsabilità su tempi, costi e relazioni con stakeholder</li>
-            <li>Leadership, coaching e gestione di team multidisciplinari distribuiti</li>
-            <li>Conoscenza avanzata di software di produttività (Microsoft Office, Excel avanzato, Outlook, Teams)</li>
-            <li>SQL e PL/SQL: creazione viste, interrogazioni, estrazione dati su database Oracle</li>
-            <li>Gestione log HL7 e flussi clinici, supporto utenti I e II livello</li>
-            <li>Redazione documentazione tecnica, manualistica e formazione del personale</li>
-            <li>Buona familiarità con sistemi operativi Windows, Android e iOS</li>
+            <li>Coordinamento operativo/strategico di 80+ Application Specialist</li>
+            <li>Gestione progetti ICT sanitari (tempi, costi, stakeholder)</li>
+            <li>Leadership, coaching, team distribuiti</li>
+            <li>Office, Excel avanzato, Outlook, Teams</li>
+            <li>SQL e PL/SQL su Oracle</li>
+            <li>Log HL7, flussi clinici</li>
+            <li>Manualistica e formazione utenti</li>
+            <li>OS: Windows, Android, iOS</li>
           </ul>
         </article>
 
         <!-- Curriculum -->
         <article id="curriculum">
           <h2 class="major">Curriculum Vitae</h2>
-          <p>Puoi visualizzare il mio CV direttamente da qui o scaricarlo sul tuo dispositivo:</p>
+          <p>Puoi visualizzare o scaricare il mio CV:</p>
           <ul>
-            <li><a href="cv-marco-scagno.pdf" target="_blank">📄 Visualizza il CV (PDF)</a></li>
-            <li><a href="cv-marco-scagno.pdf" download>⬇️ Scarica il CV</a></li>
+            <li><a href="cv-marco-scagno.pdf" target="_blank">📄 Visualizza CV (PDF)</a></li>
+            <li><a href="cv-marco-scagno.pdf" download>⬇️ Scarica CV</a></li>
           </ul>
         </article>
 
